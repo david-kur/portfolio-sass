@@ -26,3 +26,24 @@ $home-image: url(../img/background.jpg);
     }
   }
 }
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
